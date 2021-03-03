@@ -22,4 +22,10 @@ This is a project for the people who are getting stuck or are tired of writing a
 10. Now try to run the project with `npm run start`.
 
 ## Contribution
-Handled in the future. Please hold on.
+Thank you for the time to contribute to this project!
+
+While contributing, you agree to the [Code of Conduct](./CODE_OF_CONDUCT.md). The Code of Conduct ensures the people that are contributing to this project, that it will be done respectfully.
+
+<br>
+
+For more information on how to contribute to the project, please read the [contributing guidelines](./CONTRIBUTING.md).
