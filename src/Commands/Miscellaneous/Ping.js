@@ -8,11 +8,11 @@ module.exports = class PingCommand extends BaseCommand {
 			name: 'ping',
 			category: 'miscellaneous',
 			aliases: ['p', 'pong']
-		})
+		});
 	}
 
 	// This will execute once the command has been used.
 	run(client, message, args) {
-		message.channel.send('Test');
+		message.channel.send('This is a test command');
 	}
 }

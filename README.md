@@ -5,7 +5,7 @@
 * [How do I get started?](#getting-started)
 
 ## What does this project do?
-This project is a simple setup for Discord Bot creation. This project is a very simple starting point for creating your own Discord Bot. It has a command handler built-in, so you don't have to worry about that anymore.
+This project is a simple setup for Discord Bot creation. This project is a very simple starting point for creating your own Discord Bot. It has a command & event handler built-in, so you don't have to worry about that anymore.
 
 This is a project for the people who are getting stuck or are tired of writing a bot setup over and over again.
 
