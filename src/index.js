@@ -2,7 +2,6 @@
 require('dotenv').config();
 const { Client, Collection } = require('discord.js');
 // Files...
-const { prefix } = require('./Config/config.json');
 const { registerCommands, registerEvents } = require('./Utils/Structures/index.js');
 // Creating the client.
 const client = new Client();
