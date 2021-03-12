@@ -1,5 +1,5 @@
-const { prefix } = require('../../Config/config.json');
-const { BaseEvent } = require('../../Utils/Structures/index.js');
+require('dotenv').config();
+const BaseEvent = require('../../Utils/Structures/Base/BaseEvent.js');
 
 module.exports = class ReadyEvent extends BaseEvent {
 	constructor() {
@@ -12,9 +12,9 @@ module.exports = class ReadyEvent extends BaseEvent {
 
 	async run (client, message) {
 		// Ignore the bots and the messages that don't start with the prefix.
-		if (message.author.bot || message.content.indexOf(prefix) !== 0) return;
+		if (message.author.bot || message.content.indexOf(process.env.PREFIX) !== 0) return;
 		// Here we destructure message.content to define which is the command name and which the arguments.
-		const [commandName, ...args] = message.content.slice(prefix.length).split(/\s+/);
+		const [commandName, ...args] = message.content.slice(process.env.PREFIX.length).split(/\s+/);
 		// Fetch the command with the given command name.
 		const command = await client.commands.get(commandName.toLowerCase()) || await client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName.toLowerCase()));
 

@@ -1,4 +1,4 @@
-const { BaseEvent } = require('../../Utils/Structures/index.js');
+const BaseEvent = require('../../Utils/Structures/Base/BaseEvent.js');
 
 module.exports = class ReadyEvent extends BaseEvent {
 	constructor() {

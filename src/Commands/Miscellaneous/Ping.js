@@ -1,5 +1,5 @@
 // Import the BaseCommand class, so we can extend this class with our new command class.
-const { BaseCommand } = require('../../Utils/Structures/index.js');
+const BaseCommand = require('../../Utils/Structures/Base/BaseCommand.js');
 
 module.exports = class PingCommand extends BaseCommand {
 	constructor() {
