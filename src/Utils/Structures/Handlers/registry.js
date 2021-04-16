@@ -2,8 +2,8 @@
 const path = require('path');
 const fs = require('fs').promises;
 // Files...
-const BaseEvent = require('../../Utils/Structures/Base/BaseEvent.js');
-const BaseCommand = require('../../Utils/Structures/Base/BaseCommand.js');
+const BaseEvent = require('../Base/BaseEvent');
+const BaseCommand = require('../Base/BaseCommand');
 
 // This is the function to register commands to the client.
 const registerCommands = async (client, dir = '') => {

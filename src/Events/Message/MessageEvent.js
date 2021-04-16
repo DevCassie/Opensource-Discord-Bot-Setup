@@ -18,6 +18,12 @@ module.exports = class ReadyEvent extends BaseEvent {
 		// Fetch the command with the given command name.
 		const command = await client.commands.get(commandName.toLowerCase()) || await client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName.toLowerCase()));
 
+		if (command.devOnly === true) {
+			if (message.author.id !== process.env.DEVID) {
+				return message.channel.send('This is a developer command which can\'t be used by you.');
+			}
+		}
+
 		try {
 			// Bind the client, message and args object to the commands run function. THIS IS IMPORTANT.
 			command.run(client, message, args);

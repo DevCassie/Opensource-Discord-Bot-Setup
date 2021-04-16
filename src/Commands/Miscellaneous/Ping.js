@@ -7,7 +7,8 @@ module.exports = class PingCommand extends BaseCommand {
 		super({
 			name: 'ping',
 			category: 'miscellaneous',
-			aliases: ['p', 'pong']
+			aliases: ['p', 'pong'],
+			devOnly: true
 		});
 	}
 
